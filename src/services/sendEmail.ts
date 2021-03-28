@@ -7,13 +7,13 @@ export default function sendEmail(nome: string, email: string, identity: string)
     port: 465,
     secure: true,
     auth: {
-      user: 'george.soares509@gmail.com',
-      pass: 'maluco12'
+      user: 'youremail',
+      pass: 'yourpass'
     }
   });
 
   transporter.sendMail({
-    from:'MrClean <george.soares509@gmail.com>',
+    from:'MrClean <youremail>',
     to: email,
     subject:`Confirmar Email - MrClean`,
     html:`<div><h1>Olá, vimos que você completou o cadastro no nosso Site</h1>
